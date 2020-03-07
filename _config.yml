@@ -1,7 +1,7 @@
 # Blog info
-blog_name: Forsigner
-slogan: Find the bug of the world
-url: http://www.forsigner.com
+blog_name: wheam
+slogan: 一个正儿八经的产品经理，目前在 bytedance 工作
+url: http://wheam.me
 
 # Set avatar (Absolute url and relative url)
 avatar: /images/avatar.jpg
@@ -10,64 +10,73 @@ avatar: /images/avatar.jpg
 favicon: /favicon.ico
 
 # For seo
-keywords: forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript
+keywords:  wheam
 
 home_nav:
-  - name: Blog
-    url: /archives
-    target_blank: false #不在新页面打开
-  - name: Project
-    url: /project/
-    target_blank: true #在新页面打开
   - name: Github
-    url: https://github.com/forsigner
+    url: https://github.com/wheam
     target_blank: true
   - name: Twitter
-    url: https://twitter.com/forsigner
+    url: https://twitter.com/wheam_
+    target_blank: true
+  - name: Facebook
+    url: https://www.facebook.com/wheam.me
+    target_blank: true
+  - name: Instagram
+    url: https://www.instagram.com/wheam_/
+    target_blank: true
+  - name: Youtube
+    url: https://www.youtube.com/channel/UCMZ0qVsLIrJs1SeUQD-yoFg
+    target_blank: true
+  - name: Steam
+    url: https://steamcommunity.com/id/wheam
     target_blank: true
 
+    
+
+# For seo
 # config page nav
 page_nav:
-  - name: 博客
-    url: /archives/
-    target_blank: false # 不在新页面打开
-  - name: 分类
-    url: /category/
-    target_blank: false
-  - name: 标签
-    url: /tag/
-    target_blank: false
-  - name: 友链
-    url: /link/
-    target_blank: false
+  # - name: 博客
+  #   url: /archives/
+  #   target_blank: false # 不在新页面打开
+  # - name: 分类
+  #   url: /category/
+  #   target_blank: false
+  # - name: 标签
+  #   url: /tag/
+  #   target_blank: false
+  # - name: 友链
+  #   url: /link/
+  #   target_blank: false
   - name: 关于
     url: /about/
     target_blank: false
-  - name: RSS
-    url: /atom.xml
-    target_blank: true # 在新页面打开
-  - name: 搜索
-    url: /search/
-    target_blank: false # 在新页面打开
+  # - name: RSS
+  #   url: /atom.xml
+  #   target_blank: true # 在新页面打开
+  # - name: 搜索
+  #   url: /search/
+  #   target_blank: false # 在新页面打开
 
 page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
 
 # 面包屑
 breadcrumb:
-  isShow: true # true|fase
+  isShow: false # true|fase
 
 # 盒子
 toolbox:
-  isShow: true # true|fase
-  text: 盒子
+  isShow: false # true|fase
+  text: wheam
 
 search_slogan:
   isShow: true # true|fase
-  text: Can you find the bug of world ~
+  text: wheam ~
 
 link_slogan:
   isShow: true # true|fase
-  text: 交换友链可以邮件 forsigner@gmail.com
+  text: 交换友链可以邮件 wheam.me@gmail.com
 
 
 # set backtop show or hide
@@ -80,17 +89,17 @@ backtop:
   link: false
   about: false
 
-donation:
-  show: true
-  btn_text: 支持一下
-  tip: 扫一扫，支持forsigner
-  items:
-    - type: 微信
-      text: 微信扫一扫
-      imgUrl: /images/qr-wechat.png
-    - type: 支付宝
-      text: 支付宝扫一扫
-      imgUrl: /images/qr-alipay.png
+# donation:
+#   show: true
+#   btn_text: 支持一下
+#   tip: 扫一扫，支持forsigner
+#   items:
+#     - type: 微信
+#       text: 微信扫一扫
+#       imgUrl: /images/qr-wechat.png
+#     - type: 支付宝
+#       text: 支付宝扫一扫
+#       imgUrl: /images/qr-alipay.png
 
 
 
@@ -124,8 +133,8 @@ init_page_content: HOME_NAV  # HOME_NAV | POST
 # 第三方服务
 # =========================================================
 # Stats
-google_analytics: UA-38189205-1
-baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
+google_analytics: 
+baidu_analytics: 
 
 # Comment service
 
@@ -144,12 +153,12 @@ changyan:
 
 # gitalk评论组件，把下面的配置换成你的，官方文档: https://gitalk.github.io/
 gitalk:
-  enable: true # 如果使用 gitalk，请设置改之为true
-  clientID: 277317290454635afa73
-  clientSecret: 78223c859304da5e8d71bfce136d436c6ff95c37
-  repo: blog-comment
-  owner: forsigner
-  admin: forsigner
+  enable: false # 如果使用 gitalk，请设置改之为true
+  clientID: 
+  clientSecret: 
+  repo: 
+  owner: 
+  admin: 
 
 
 # gitment comment service
@@ -185,113 +194,114 @@ valine:
 
 
 # 不算子,文章访问量统计和显示
-busuanzi: true
+busuanzi: false
 
 # =========================================================
 # 页面内容设置
 # =========================================================
 about:
-  - type: me
-    icon: icon-user
-    text_value:
-    - "Scut，1991，Spring."
-    - "喜欢设计，擅长编程，喜欢睡懒觉."
-    - "前端开发工程师，常用 HTML / CSS / JavaScript."
-  - type: Github
-    icon: icon-github
-    text_key: Github
-    text_value: "@forsigner"
-    text_value_url: https://github.com/forsigner
-  - type: weibo
-    icon: icon-weibo
-    text_key: 微博
-    text_value: "@forsigner"
-    text_value_url: http://weibo.com/u/1847075964
-  - type: mail
-    icon: icon-mail
-    text_key: Gmail
-    text_value: "forsigner@gmail.com"
-  - type: location
-    icon: icon-location
-    text_value: 珠海
+  # - type: me
+  #   icon: icon-user
+  #   text_value:
+  #   - "Scut，1991，Spring."
+  #   - "喜欢设计，擅长编程，喜欢睡懒觉."
+  #   - "前端开发工程师，常用 HTML / CSS / JavaScript."
+  # - type: Github
+  #   icon: icon-github
+  #   text_key: Github
+  #   text_value: "@forsigner"
+  #   text_value_url: https://github.com/forsigner
+  # - type: weibo
+  #   icon: icon-weibo
+  #   text_key: 微博
+  #   text_value: "@forsigner"
+  #   text_value_url: http://weibo.com/u/1847075964
+  # - type: mail
+  #   icon: icon-mail
+  #   text_key: Gmail
+  #   text_value: "forsigner@gmail.com"
+  # - type: location
+  #   icon: icon-location
+  #   text_value: 珠海
 
 link:
-  - name: 织网
-    info: 身体和灵魂，总有一个在路上
-    url: http://zheng-ji.info/
-    avatar: https://avatars3.githubusercontent.com/u/1414745?v=3&s=100
-  - name: Dongyado
-    info: 生命不止，折腾不息
-    url: http://dongyado.com/
-    avatar: https://avatars0.githubusercontent.com/u/6274940?v=3&s=100
-  - name: OrangeCoder
-    info: android ffmpeg nodejs gradle
-    url: http://orangecoder.com/
-    avatar: https://avatars0.githubusercontent.com/u/2263785?v=3&s=100
-  - name: EverET
-    info: 好记性不如烂笔头
-    url: http://everet.org/about-me/
-    avatar: https://avatars1.githubusercontent.com/u/1559563?v=3&s=100
-  - name: 题叶
-    info: FP, GUI, Writing
-    url: http://tiye.me/
-    avatar: https://avatars2.githubusercontent.com/u/449224?v=3&s=100
-  - name: McChen
-    info: Stay Hungry, Stay Foolish
-    url: https://chenjiahao.xyz
-    avatar: https://avatars0.githubusercontent.com/u/8033333?v=3&s=100
+  # - name: 织网
+  #   info: 身体和灵魂，总有一个在路上
+  #   url: http://zheng-ji.info/
+  #   avatar: https://avatars3.githubusercontent.com/u/1414745?v=3&s=100
+  # - name: Dongyado
+  #   info: 生命不止，折腾不息
+  #   url: http://dongyado.com/
+  #   avatar: https://avatars0.githubusercontent.com/u/6274940?v=3&s=100
+  # - name: OrangeCoder
+  #   info: android ffmpeg nodejs gradle
+  #   url: http://orangecoder.com/
+  #   avatar: https://avatars0.githubusercontent.com/u/2263785?v=3&s=100
+  # - name: EverET
+  #   info: 好记性不如烂笔头
+  #   url: http://everet.org/about-me/
+  #   avatar: https://avatars1.githubusercontent.com/u/1559563?v=3&s=100
+  # - name: 题叶
+  #   info: FP, GUI, Writing
+  #   url: http://tiye.me/
+  #   avatar: https://avatars2.githubusercontent.com/u/449224?v=3&s=100
+  # - name: McChen
+  #   info: Stay Hungry, Stay Foolish
+  #   url: https://chenjiahao.xyz
+  #   avatar: https://avatars0.githubusercontent.com/u/8033333?v=3&s=100
 
 
 project:
-  - type: personal
-    name: fexo
-    url: https://github.com/forsigner/fexo
-    intro: A minimalist design theme for hexo
-  # - type: company
-  #   name: Fexo
+  # - type: personal
+  #   name: fexo
   #   url: https://github.com/forsigner/fexo
   #   intro: A minimalist design theme for hexo
-  - type: personal
-    name: beside
-    url: https://github.com/forsigner/beside
-    intro: I need you beside me
-  - type: personal
-    name: web-fontmin
-    url: https://github.com/forsigner/web-fontmin
-    intro: 字体子集化，在线提取你需要的字体
-  - type: personal
-    name: magic-check
-    url: https://github.com/forsigner/magic-check
-    intro: Beautify Radio and Checkbox with pure CSS
-  - type: personal
-    name: nice-bar
-    url: https://github.com/forsigner/nice-bar
-    intro: A nice and lightweight scrollbar
-  - type: personal
-    name: angular-nice-bar
-    url: https://github.com/forsigner/angular-nice-bar
-    intro: A nice and lightweight scrollbar in Angular
-  - type: personal
-    name: fo-popover
-    url: https://github.com/forsigner/fo-popover
-    intro: A nice popover for Angular
-  - type: personal
-    name: fo-tooltip
-    url: A nice tooltip for Angular
-    intro: https://github.com/forsigner/fo-tooltip
-  - type: personal
-    name: fo-modal
-    url: https://github.com/forsigner/fo-modal
-    intro: A nice modal for Angular
-  - type: personal
-    name: mocer
-    url: https://github.com/forsigner/mocer
-    intro: Setup a mock server easily
-  - type: personal
-    name: node-pngdefry
-    url: https://github.com/forsigner/node-pngdefry
-    intro: Repairing iPhone fried PNGs using Node.js
-  - type: personal
-    name: ng-simditor
-    url: https://github.com/forsigner/ng-simditor
-    intro: Angular directive for simditor
+  # # - type: company
+  # #   name: Fexo
+  # #   url: https://github.com/forsigner/fexo
+  # #   intro: A minimalist design theme for hexo
+  # - type: personal
+  #   name: beside
+  #   url: https://github.com/forsigner/beside
+  #   intro: I need you beside me
+  # - type: personal
+  #   name: web-fontmin
+  #   url: https://github.com/forsigner/web-fontmin
+  #   intro: 字体子集化，在线提取你需要的字体
+  # - type: personal
+  #   name: magic-check
+  #   url: https://github.com/forsigner/magic-check
+  #   intro: Beautify Radio and Checkbox with pure CSS
+  # - type: personal
+  #   name: nice-bar
+  #   url: https://github.com/forsigner/nice-bar
+  #   intro: A nice and lightweight scrollbar
+  # - type: personal
+  #   name: angular-nice-bar
+  #   url: https://github.com/forsigner/angular-nice-bar
+  #   intro: A nice and lightweight scrollbar in Angular
+  # - type: personal
+  #   name: fo-popover
+  #   url: https://github.com/forsigner/fo-popover
+  #   intro: A nice popover for Angular
+  # - type: personal
+  #   name: fo-tooltip
+  #   url: A nice tooltip for Angular
+  #   intro: https://github.com/forsigner/fo-tooltip
+  # - type: personal
+  #   name: fo-modal
+  #   url: https://github.com/forsigner/fo-modal
+  #   intro: A nice modal for Angular
+  # - type: personal
+  #   name: mocer
+  #   url: https://github.com/forsigner/mocer
+  #   intro: Setup a mock server easily
+  # - type: personal
+  #   name: node-pngdefry
+  #   url: https://github.com/forsigner/node-pngdefry
+  #   intro: Repairing iPhone fried PNGs using Node.js
+  # - type: personal
+  #   name: ng-simditor
+  #   url: https://github.com/forsigner/ng-simditor
+  #   intro: Angular directive for simditor
+
